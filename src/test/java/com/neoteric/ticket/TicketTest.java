@@ -46,6 +46,7 @@ public class TicketTest {
         ticketForm.ticketPrice=1000;
         ticketForm.availability="yes";
         TicketService service=new TicketService();
+
         TicketForm ticketForm1 = service.getticket(ticketForm);
         Assertions.assertNotNull(ticketForm1);
 

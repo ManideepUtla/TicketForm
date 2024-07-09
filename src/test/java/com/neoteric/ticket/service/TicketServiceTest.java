@@ -43,10 +43,10 @@ class TicketServiceTest {
         ticketForm.noOfTickets=4;
         ticketForm.noOfSeates=4;
         ticketForm.rowNo="D(12-15)";
-        ticketForm.ticketPrice=1000;
-        ticketForm.availability="yes";
+        ticketForm.ticketPrice=1269;
+        ticketForm.availability="No";
 
-        TicketService service=new TicketService();
+        /*TicketService service=new TicketService();
         service.getticket(ticketForm);
 
 
@@ -55,6 +55,16 @@ class TicketServiceTest {
          TicketForm t = service.getticket(ticketForm1);
         //Assertions.assertEquals(1000, ticketForm1.price);
         Assertions.assertNull(t);
+
+        //System.out.println(service.getticket(ticketForm));
+
+*/
+        TicketService service=new TicketService();
+        service.getticket(ticketForm);
+
+        TicketForm ticketForm1 = service.getticket(ticketForm);
+        //Assertions.assertEquals(1269, ticketForm1.price);
+        Assertions.assertNull(ticketForm1);
 
         //System.out.println(service.getticket(ticketForm));
 

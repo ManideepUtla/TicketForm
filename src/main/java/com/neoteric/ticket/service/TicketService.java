@@ -10,7 +10,7 @@ public class TicketService {
         TicketForm ticketForm1=null;
 
 
-        if(ticketForm.noOfTickets == 4) {
+        if(ticketForm.availability == "yes") {
             ticketForm1 = new TicketForm();
 
 
